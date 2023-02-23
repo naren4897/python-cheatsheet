@@ -2,7 +2,7 @@
 title: 'Changelog - Python Cheatsheet'
 description: See what is new, what got fixed, and what is coming.
 date: July 19, 2022
-updated: July 19, 2022
+updated: February 11, 2023
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
@@ -10,6 +10,32 @@ Changelog
 </base-title>
 
 <!-- ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next) -->
+
+## 2023-02-11
+
+- Added a filter method example for the built-in functions section. [@firdousmurtaza1](https://github.com/firdousmurtaza1) ([#161](https://github.com/wilfredinni/python-cheatsheet/pull/161))
+
+## 2023-02-05
+
+- Make it clear that the python dictionary is ordered by insertion of key value pairs. Thanks [@wn9237](https://github.com/wn9237) ([#159](https://github.com/wilfredinni/python-cheatsheet/pull/159))
+- Added Dictionary subscription. Thanks [@kakasahebKK](https://github.com/kakasahebKK) ([#158](https://github.com/wilfredinni/python-cheatsheet/pull/158))
+
+## 2023-01-30
+
+- Fixed some mistakes in Dictionaries. Thanks [@Acumane](https://github.com/Acumane) ([#155](https://github.com/wilfredinni/python-cheatsheet/pull/155))
+- Added `map` built-in details and examples. Thanks [@noraa-july-stoke](https://github.com/noraa-july-stoke) ([#156](https://github.com/wilfredinni/python-cheatsheet/pull/156))
+
+## 2023-01-16
+
+- Added a <new-badge /> badge to highlight new or updated content.
+- Added `bytearray` built-in details and examples.
+- Added `bytes` built-in details and examples.
+- Added `callable` built-in details and examples.
+- Added `chr` built-in details and examples.
+
+## 2023-01-12
+
+- Fixed a typo on `setup.py` . Thanks [@qkniep](https://github.com/qkniep) ([#154](https://github.com/wilfredinni/python-cheatsheet/pull/154))
 
 ## 2022-12-01
 

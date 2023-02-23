@@ -1,6 +1,6 @@
 ---
 title: Python Dictionaries - Python Cheatsheet
-description: In Python, a dictionary is an ordered (from Python > 3.7) collection of key, value pairs.
+description: In Python, a dictionary is an insertion-ordered (from Python > 3.7) collection of key, value pairs.
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
@@ -26,6 +26,38 @@ my_cat = {
     'color': 'gray',
     'disposition': 'loud'
 }
+```
+
+## Set key, value using subscript operator `[]`
+```python
+>>> my_cat = {
+...  'size': 'fat',
+...  'color': 'gray',
+...  'disposition': 'loud',
+... }
+>>> my_cat['age_years'] = 2
+>>> print(my_cat)
+...
+# {'size': 'fat', 'color': 'gray', 'disposition': 'loud', 'age_years': 2}
+```
+
+## Get value using subscript operator `[]`
+
+In case the key is not present in dictionary <a target="_blank" href="https://docs.python.org/3/library/exceptions.html#KeyError">`KeyError`</a> is raised.
+
+```python
+>>> my_cat = {
+...  'size': 'fat',
+...  'color': 'gray',
+...  'disposition': 'loud',
+... }
+>>> print(my_cat['size'])
+...
+# fat
+>>> print(my_cat['eye_color'])
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# KeyError: 'eye_color'
 ```
 
 ## values()
@@ -67,7 +99,7 @@ There is no need to use **.keys()** since by default you will loop through keys:
 
 ## items()
 
-The `items()` method gets the **items** of a dictionary and return them as a <router-link to=/cheatsheet/lists-and-tuples#the-tuple-data-type>Tuple</router-link>:
+The `items()` method gets the **items** of a dictionary and returns them as a <router-link to=/cheatsheet/lists-and-tuples#the-tuple-data-type>Tuple</router-link>:
 
 ```python
 >>> pet = {'color': 'red', 'age': 42}
@@ -91,7 +123,7 @@ Using the `keys()`, `values()`, and `items()` methods, a for loop can iterate ov
 
 ## get()
 
-The `get()` method returns the value of an item with by using the key. If the key doesn't exist, it returns `None`:
+The `get()` method returns the value of an item with the given key. If the key doesn't exist, it returns `None`:
 
 ```python
 >>> wife = {'name': 'Rose', 'age': 33}
@@ -106,7 +138,7 @@ The `get()` method returns the value of an item with by using the key. If the ke
 # 'She is deeply in love with None'
 ```
 
-You can also change the default `None` value for other of your choice:
+You can also change the default `None` value to one of your choice:
 
 ```python
 >>> wife = {'name': 'Rose', 'age': 33}
@@ -125,7 +157,7 @@ It's possible to add an item to a dictionary in this way:
 ...     wife['has_hair'] = True
 ```
 
-Using the `setdefault` method we can make the same code more short:
+Using the `setdefault` method, we can make the same code more short:
 
 ```python
 >>> wife = {'name': 'Rose', 'age': 33}
@@ -138,7 +170,7 @@ Using the `setdefault` method we can make the same code more short:
 
 ### pop()
 
-The `pop()` method removes and return an item based on a given key.
+The `pop()` method removes and returns an item based on a given key.
 
 ```python
 >>> wife = {'name': 'Rose', 'age': 33, 'hair': 'brown'}
@@ -150,7 +182,7 @@ The `pop()` method removes and return an item based on a given key.
 
 ### popitem()
 
-The `popitem()` method remove the last item in a dictionary and returns it.
+The `popitem()` method removes the last item in a dictionary and returns it.
 
 ```python
 >>> wife = {'name': 'Rose', 'age': 33, 'hair': 'brown'}
